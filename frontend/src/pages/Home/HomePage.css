@@ -1,0 +1,183 @@
+.bem-vindo {
+    width: 100%;
+    background-image: url('../../../public/images/tropical-beach.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+    text-align: left;
+    
+}
+
+.title, .subtitle, .more {margin: 0;color: #515151;}
+
+.bem-vindo .title {
+    font-size: 3.2vw;
+    font-weight: 400;
+    padding-top: 13vw;
+    font-weight: 500;
+    font-family: 'Roboto Condensed';
+    letter-spacing: -0.12vw;
+    margin-left: 6vw;
+}
+
+.bem-vindo .subtitle {
+    font-size: 1.5vw;
+    font-weight: 300;
+    margin-top: .6vw;
+    margin-left: 6vw;
+}
+
+.bem-vindo .more {
+    background-color: #7AD03A;
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 1.3vw 3vw;
+    font-size: 1.4vw;
+    border-radius: 8px;
+    margin-top: 2vw;
+    margin-bottom: 10vw;
+    letter-spacing: -0.01vw;
+    margin-left: 6vw;
+}
+
+.greenFont {
+    color: #7CB930;
+}
+
+.sobre {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 8vw;
+}
+
+.sobre .title, .produtos .title {
+    font-weight: bold;
+    font-size: 2.8vw;
+    letter-spacing: -0.05vw;
+}
+
+.sobre .subtitle {
+    font-size: 1.44vw;
+    letter-spacing: -0.03vw;
+    font-weight: 300;
+    color: #515151;
+}
+
+.sobre .more {
+    background-color: #fff;
+    text-decoration: none;
+    border: none;
+    color: #7AD03A;
+    font-weight: 600;
+    padding: .6vw 2vw .6vw 0;
+    font-size: 1.4vw;
+    border-radius: 8px;
+    margin-top: 1vw;
+    letter-spacing: -0.01vw;
+}
+
+.collum2 {margin-left: 10vw;}
+.text1 {margin-top: .6vw;}
+.text2 {margin-top: 2vw;}
+
+.produtos .title {
+    width: 36%;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 4vw;
+    text-align: left;
+}
+
+.produto {
+    width: 18vw;
+    align-self: center;
+    justify-self: center;
+}
+
+.nome-produto {
+    font-weight: bold;
+    margin: 1vw 0 0 0;
+    font-size: 1.3vw;
+}
+.preco-produto {
+    margin: .5vw 0 0 0;
+    font-size: 1.4vw;
+}
+.imagem-produto {width: 100%;}
+
+.comprar-produto {
+    margin: 1.5vw 0 0 0;
+    background-color: #7CB930;
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 1vw 2.2vw;
+    font-size: 1.4vw;
+    border-radius: 4px;
+    margin-top: 2vw;
+    letter-spacing: -0.01vw;
+    margin-left: 1vw;
+}
+
+.saiba-mais {
+    width: 100%;
+    margin-top: 8vw;
+}
+
+.line-detail {
+    width: 100%;
+    background-color: #7CB930;
+    height: 4vw;
+}
+
+.saiba-mais .title {
+    font-weight: bold;
+    font-size: 2.8vw;
+    letter-spacing: -0.05vw;
+    color: #fff;
+}
+
+.saiba-mais .subtitle {
+    font-size: 1.65vw;
+    letter-spacing: -0.03vw;
+    font-weight: 400;
+    color: #fff;
+    margin-top: .5vw;
+}
+
+.saiba-mais .image {
+    width: 100%;
+    background-image: url('../../../public/images/saiba-mais-banner.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+    text-align: left;
+}
+
+.saiba-mais .box {
+    padding: 8vw 0 14vw 5vw;
+}
+
+.saiba-mais .greenFont {
+    color: #9cee37;
+}
+
+.saiba-mais .more {
+    background-color: #7CB930;
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 1.2vw 3vw;
+    font-size: 1.6vw;
+    border-radius: 4px;
+    margin-top: 5vw;
+    letter-spacing: -0.01vw;
+}
