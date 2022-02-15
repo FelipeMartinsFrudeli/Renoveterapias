@@ -8,7 +8,7 @@ function Toolbar() {
             <div className='line'></div>
             <div className='Toolbar'>
                 <div className='logo'>
-                    <img src='./images/logo-toolbar.svg' className='logo-toolbar'/>
+                    <img src='./images/logo-toolbar.svg' className='logo-toolbar' alt=''/>
                 </div>
                 <div className='button-frame'>
                     <button className='button withBorder'>Home</button>

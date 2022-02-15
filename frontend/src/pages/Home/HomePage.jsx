@@ -9,7 +9,7 @@ function HomePage() {
         <div>
             <Toolbar/>
             <div className='bem-vindo'>
-                <p className='title'>Seja bem vindo a RenoveTerapias!</p>
+                <p className='title'>Seja bem vindo a Renoveterapias!</p>
                 <p className='subtitle'>Aparelho capaz de descobrir as disfunções do organismo</p>
                 <button className='more'>Saiba mais</button>
             </div>
@@ -33,25 +33,25 @@ function HomePage() {
                 <p className='title'>NOSSOS <a className='greenFont'> PRODUTOS</a></p>
                 <div className='produtos-grid'>
                     <div className='produto'>
-                        <img src='./images/produtos/Pro-Zen-300x300.png' className='imagem-produto'/>
+                        <img src='./images/produtos/Pro-Zen-300x300.png' className='imagem-produto' alt=''/>
                         <p className='nome-produto'>PróZen – Cápsulas – 60 cápsulas – 680mg</p>
                         <p className='preco-produto'>R$ 51.90</p>
                         <button className='comprar-produto'>Comprar</button>
                     </div>
                     <div className='produto'>
-                        <img src='./images/produtos/Mente-Urbana-300x300.png' className='imagem-produto'/>
+                        <img src='./images/produtos/Mente-Urbana-300x300.png' className='imagem-produto' alt=''/>
                         <p className='nome-produto'>Mente Urbana – Cápsulas – 120 cápsulas – 700mg</p>
                         <p className='preco-produto'>R$ 51.90</p>
                         <button className='comprar-produto'>Comprar</button>
                     </div>
                     <div className='produto'>
-                        <img src='./images/produtos/Q10-21h-300x300.png' className='imagem-produto'/>
+                        <img src='./images/produtos/Q10-21h-300x300.png' className='imagem-produto' alt=''/>
                         <p className='nome-produto'>Q10 21h – Cápsulas – 60 cápsulas – 580mg</p>
                         <p className='preco-produto'>R$ 51.90</p>
                         <button className='comprar-produto'>Comprar</button>
                     </div>
                     <div className='produto'>
-                        <img src='./images/produtos/Pro-Zen-300x300.png' className='imagem-produto'/>
+                        <img src='./images/produtos/Pro-Zen-300x300.png' className='imagem-produto' alt=''/>
                         <p className='nome-produto'>Óleo de Gérmen de Trigo – Cápsulas – 120 cápsulas softgel – 250mg</p>
                         <p className='preco-produto'>R$ 51.90</p>
                         <button className='comprar-produto'>Comprar</button>
