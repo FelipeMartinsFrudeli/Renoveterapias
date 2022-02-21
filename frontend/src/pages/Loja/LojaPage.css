@@ -1,0 +1,63 @@
+.container-loja-page {
+    min-height: 40vw;
+    width: 100%;
+}
+
+.line-detail {
+    font-family: 'Roboto Condensed';
+    height: 6vw;
+    text-align: left;
+}
+
+.text-line-detail {
+    font-weight: normal;
+    font-size: 2.8vw;
+    letter-spacing: -0.05vw;
+    color: #fff;
+    height: 100%;
+    padding-top: 1.2vw;
+    padding-left: 4vw;
+}
+
+.totalResults {
+    color: #676767;
+    margin-top: 4vw;
+    text-align: left;
+    margin-left: 6vw;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 3vw;
+    text-align: left;
+}
+
+.produtos .title {
+    width: 36%;
+}
+
+.produto {
+    width: 20vw;
+    margin-bottom: 4vw;
+}
+
+.nome-produto {
+    font-weight: bold;
+    margin: 1vw 0 0 0;
+    font-size: 1.3vw;
+}
+.preco-produto {
+    margin: .5vw 0 0 0;
+    font-size: 1.4vw;
+}
+.imagem-produto {width: 90%;}
+
+.comprar-produto {
+    margin-left: 0vw;
+    padding: .8vw 2.2vw;
+}
+
+.text {
+    align-self: center;
+}

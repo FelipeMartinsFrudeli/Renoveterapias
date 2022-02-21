@@ -125,6 +125,9 @@
     margin-top: 2vw;
     letter-spacing: -0.01vw;
     margin-left: 1vw;
+    display: flex;
+    flex-direction: row;
+    width: 5.2vw;
 }
 
 .saiba-mais {
@@ -180,4 +183,8 @@
     border-radius: 4px;
     margin-top: 5vw;
     letter-spacing: -0.01vw;
+}
+
+.text {
+    align-self: center;
 }

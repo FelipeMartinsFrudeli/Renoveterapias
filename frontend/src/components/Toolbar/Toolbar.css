@@ -15,6 +15,7 @@
     height: 6.5vw;
     position: sticky;
     position: -webkit-sticky;
+    
 }
 
 .button-frame {
@@ -31,12 +32,24 @@
     color: #515151;
     padding: 0 1.4vw;
     font-size: 1.2vw;
+    display:grid; 
+    justify-content:center;
+}
+
+.text {
+    align-self: center;
 }
 
 .button:hover {
     background-color: #7AD03A;
     color: #fff;
-    transition: linear 0.2s;
+    transition: linear 0.2s all;
+}
+
+.button:active {
+    background-color: #7AD03A;
+    color: #fff;
+    transition: linear 0.2s all;
 }
 
 .withBorder {
@@ -44,8 +57,17 @@
     color: #fff;
 }
 
-.logo {align-self: center;}
+.logo {
+    align-self: center;
+    margin-right: 20vw;
+}
 .logo-toolbar {height: 5vw;}
 
 .logo {width: 24%; background-color: #fff;}
 .logo, .button {height: 100%;}
+
+.Toolbar .cart-icon {
+    width: 2vw;
+    height: 80%;
+    padding-top: 20%;
+}
