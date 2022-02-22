@@ -18,10 +18,10 @@ jobs:
       env:
         MONGODB_URI: ${{secrets.MONGODB_URI}}
         APP_SECRET: ${{secrets.APP_SECRET}}
+      
       run: |
+          cd backend
           ls -la
-          echo ls -la
-          echo ls
           npm install
           echo "$MONGODB_URI"
           echo "$APP_SECRET"
