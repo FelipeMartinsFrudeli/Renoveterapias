@@ -20,6 +20,7 @@ function HomePage() {
        fetchData();
     }, [])
 
+    
     return (
         <div>
             <div className='bem-vindo'>
