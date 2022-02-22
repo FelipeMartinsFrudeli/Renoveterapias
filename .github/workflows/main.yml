@@ -1,8 +1,5 @@
 name: CI_Frontend
-on:
-  push:
-    branches:
-      - master
+on: [push]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
