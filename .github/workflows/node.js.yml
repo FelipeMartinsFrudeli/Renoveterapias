@@ -7,9 +7,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-          run:
-            working-directory: backend
+    
     strategy:
       matrix:
         node-version: [12.x, 14.x, 16.x]
@@ -21,7 +19,7 @@ jobs:
         MONGODB_URI: ${{secrets.MONGODB_URI}}
         APP_SECRET: ${{secrets.APP_SECRET}}
       run: |
-          npm install
+          dir
           echo "$MONGODB_URI"
           echo "$APP_SECRET"
           
