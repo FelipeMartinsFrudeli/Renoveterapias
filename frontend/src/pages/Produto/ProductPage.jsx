@@ -31,7 +31,7 @@ export default function ProductPage() {
             <div className='line-detail'></div>
             <div className='Product'>
                 <div className="collum1">
-                    <img src={`${window.location.href.split('/')[0]}//${window.location.href.split('/')[2]}/${window.location.href.split('/')[3]}git${image}`} className='imagem-produto' alt=''/>
+                    <img src={`${window.location.href.split('/')[0]}//${window.location.href.split('/')[2]}/${window.location.href.split('/')[3]}${image}`} className='imagem-produto' alt=''/>
                 </div>
                 <div className="collum2">
                     <p className='nome-produto'>{product.name}</p>
