@@ -1,0 +1,10 @@
+name: Frontend
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    env:
+      CURRENT_URL: ${{ secrets.CURRENT_URL }}
+    steps:
+      run: echo ${{ secrets.CURRENT_URL }}
+    
