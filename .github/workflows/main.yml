@@ -3,22 +3,26 @@ on: [push]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v1
-
-    - name: Build
-      run: |
-        npm run deploy
-      env:
+    
+    env:
         CURRENT_URL: ${{ secrets.CURRENT_URL }}
         APP_SECRET: ${{ secrets.APP_SECRET }}
         MONGODB_URI: ${{ secrets.MONGODB_URI }}
+    
+    steps:
     - name: Print_ENV
       run: |
         echo $CURRENT_URL
         echo $APP_SECRET
         echo $MONGODB_URI
+        
+    - name: Checkout
+      uses: actions/checkout@v1
+      
+    - name: Build
+      run: |
+        npm run deploy
+        
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
