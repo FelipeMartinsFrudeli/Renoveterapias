@@ -22,13 +22,19 @@ jobs:
         cache: 'npm'
     - uses: actions/checkout@master
     
+    - name: Test secrets
+      env:
+        MONGODB_URI: ${{secrets.MONGODB_URI}}
+        APP_SECRET: ${{secrets.APP_SECRET}}
+      run: |
+          echo "$MONGODB_URI"
+          echo "$APP_SECRET"
+    
     - name: Deploy to heroku
       env:
         MONGODB_URI: ${{secrets.MONGODB_URI}}
         APP_SECRET: ${{secrets.APP_SECRET}}
       uses: |
-        echo "$MONGODB_URI"
-        echo "$APP_SECRET"
         akhileshns/heroku-deploy@v3.12.12 # This is the action
       with:
         heroku_api_key: ${{secrets.HEROKU_API_KEY}}
