@@ -20,7 +20,8 @@ jobs:
         APP_SECRET: ${{secrets.APP_SECRET}}
       
       run: |
-          cd backend
+          cd ..
+          cd ./backend
           ls -la
           npm install
           echo "$MONGODB_URI"
