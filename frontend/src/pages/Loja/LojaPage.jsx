@@ -36,7 +36,7 @@ function LojaPage() {
                     {/* <ProductComponent name={nameProduct} price={priceProduct} image={imageProduct} /> */}
                     {Object.keys(product).map(function(object, index) {
                         if(loading) {return} else {
-                            return <ProductComponent name={product[object].name} price={product[object].price} image={product[object].url_image} key={index.toString()} id={product[object]._id} />
+                            return <ProductComponent name={product[object].name} price={product[object].price} image={`${window.location.href.split('/')[0]}//${window.location.href.split('/')[2]}${product[object].url_image}`} key={index.toString()} id={product[object]._id} />
                         }
                     })}
                 </div>

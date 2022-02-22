@@ -32,12 +32,14 @@ function Toolbar() {
         }
     }
 
+    console.log(window.location.href.split('/')[0], window.location.href.split('/'))
+
     return (
         <div className='container'>
             <div className='line'></div>
             <div className='Toolbar'>
                 <div className='logo'>
-                    <img src='http://localhost:3000/images/logo-toolbar.svg' className='logo-toolbar' alt=''/>
+                    <img src={`${window.location.href.split('/')[0]}//${window.location.href.split('/')[2]}/images/logo-toolbar.svg`} className='logo-toolbar' alt=''/>
                 </div>
                 <div className='button-frame'>
                     <Link to="/" onClick={checkbox} id="home" className='button withBorder'><div className='text'>Home</div></Link>
