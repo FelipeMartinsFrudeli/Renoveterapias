@@ -9,8 +9,7 @@ jobs:
 
     - name: Build
       run: |
-        npm install
-        npm run build
+        npm run deploy
       env:
         CURRENT_URL: ${{ secrets.CURRENT_URL }}
         APP_SECRET: ${{ secrets.APP_SECRET }}
