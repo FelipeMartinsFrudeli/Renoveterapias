@@ -11,7 +11,7 @@ function productComponent(props) {
             <img src={image} className='imagem-produto' alt=''/>
             <p className='nome-produto'>{name}</p>
             <p className='preco-produto'>R$ {price}</p>
-            <Link to={`/produto/${id}`} className='comprar-produto'><div className='text'>Comprar</div></Link>
+            <Link to={`/Renoveterapias/produto/${id}`} className='comprar-produto'><div className='text'>Comprar</div></Link>
         </div>
     );
 }

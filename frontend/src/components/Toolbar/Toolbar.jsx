@@ -39,11 +39,11 @@ function Toolbar() {
             <div className='line'></div>
             <div className='Toolbar'>
                 <div className='logo'>
-                    <img src={`${window.location.href.split('/')[0]}//${window.location.href.split('/')[2]}/images/logo-toolbar.svg`} className='logo-toolbar' alt=''/>
+                    <img src={`${window.location.href.split('/')[0]}//${window.location.href.split('/')[2]}/${window.location.href.split('/')[3]}/images/logo-toolbar.svg`} className='logo-toolbar' alt=''/>
                 </div>
                 <div className='button-frame'>
-                    <Link to="/" onClick={checkbox} id="home" className='button withBorder'><div className='text'>Home</div></Link>
-                    <Link to="/Loja" onClick={checkbox} className='button'><div className='text'>Loja</div></Link>
+                    <Link to="/Renoveterapias/" onClick={checkbox} id="home" className='button withBorder'><div className='text'>Home</div></Link>
+                    <Link to="/Renoveterapias/Loja" onClick={checkbox} className='button'><div className='text'>Loja</div></Link>
                     <Link to="/" onClick={checkbox} className='button'><div className='text'>Sobre nós</div></Link>
                     <Link to="/" onClick={checkbox} className='button'><div className='text'>Contato</div></Link>
                     <Link to="/" onClick={checkbox} className='button'><div className='text'>Artigos</div></Link>

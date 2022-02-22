@@ -12,9 +12,10 @@ export default function App() {
         <Router>
             <Toolbar/>
             <Routes>
-                <Route path="/" exact element={<HomePage/>} />
-                <Route path="/Loja" exact element={<LojaPage/>} />
-                <Route path="/Produto/:id" exact element={<ProductPage/>} />
+                {/* <Route path="/" exact element={<HomePage/>} /> */}
+                <Route path="/Renoveterapias/" exact element={<HomePage/>} />
+                <Route path="/Renoveterapias/Loja" exact element={<LojaPage/>} />
+                <Route path="/Renoveterapias/Produto/:id" exact element={<ProductPage/>} />
             </Routes>
         </Router>
     )
