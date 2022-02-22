@@ -19,7 +19,8 @@ jobs:
         MONGODB_URI: ${{secrets.MONGODB_URI}}
         APP_SECRET: ${{secrets.APP_SECRET}}
       run: |
-          ls -la
+          ls
+          npm install
           echo "$MONGODB_URI"
           echo "$APP_SECRET"
           
