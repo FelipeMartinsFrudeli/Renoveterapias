@@ -9,7 +9,7 @@ function HomePage() {
     const [product, setProduct] = useState([]);
 
     const fetchData = async () => {
-        const response = await fetch(`http://localhost:5000/products/0/4`);
+        const response = await fetch(`https://app-teste256.herokuapp.com/products/0/4`);
         const newData = await response.json();
         setProduct(newData)
         setLoading(false)

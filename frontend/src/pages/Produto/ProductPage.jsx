@@ -14,7 +14,7 @@ export default function ProductPage() {
     let { id } = useParams();
 
     const fetchData = async () => {
-        const response = await fetch(`http://localhost:5000/product/${id}`);
+        const response = await fetch(`https://app-teste256.herokuapp.com/product/${id}`);
         const newData = await response.json();
         setProduct(newData)
         setLoading(false)
