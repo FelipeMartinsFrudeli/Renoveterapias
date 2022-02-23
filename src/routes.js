@@ -9,7 +9,7 @@ import SessionsController from "./controllers/SessionsController";
 
 const routes = new Router();
 
-routes.get('/a', helloController.index);
+routes.get('/', helloController.index);
 routes.post('/sessions', SessionsController.create);
 
 routes.get('/products/:page/:itemsQuantity', ProductsController.index);
