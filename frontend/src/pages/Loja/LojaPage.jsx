@@ -10,9 +10,11 @@ function LojaPage() {
 
     let totalProductsLocal = 0
 
+    const backend_url = 'http://localhost:5000' //http://localhost:5000  https://app-teste256.herokuapp.com
+
     const fetchData = async () => {
-        const response = await fetch(`https://app-teste256.herokuapp.com/products/0/16`);
-        const TotalProducts = await fetch(`https://app-teste256.herokuapp.com/productsTotal`);
+        const response = await fetch(`${backend_url}/products/0/16`);
+        const TotalProducts = await fetch(`${backend_url}/productsTotal`);
         const newData = await response.json();
         const total = await TotalProducts.json();
         setProduct(newData)

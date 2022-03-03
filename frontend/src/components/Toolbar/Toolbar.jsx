@@ -46,7 +46,7 @@ function Toolbar() {
                     <Link to="/Renoveterapias/Loja" onClick={checkbox} className='button'><div className='text'>Loja</div></Link>
                     <Link to="/" onClick={checkbox} className='button'><div className='text'>Sobre nós</div></Link>
                     <Link to="/" onClick={checkbox} className='button'><div className='text'>Contato</div></Link>
-                    <Link to="/" onClick={checkbox} className='button'><div className='text'>Artigos</div></Link>
+                    <Link to="/Renoveterapias/Artigos" onClick={checkbox} className='button'><div className='text'>Artigos</div></Link>
                     <Link to="/" onClick={checkbox} className='button'><div className='text'>Log In</div></Link>
                     <Link to="/" onClick={()=>console.log('teste')} className='button'><div className='text'><TiShoppingCart className="cart-icon" /></div></Link>
                 </div>

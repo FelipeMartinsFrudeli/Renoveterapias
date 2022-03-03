@@ -15,6 +15,17 @@
     height: 1vw;
 }
 
+.buy-button, .add-to-cart-button {
+    font-style: none;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.buy-button:hover, .add-to-cart-button:hover {
+    opacity: 60%;
+    transition: all 0.2s;
+}
+
 .ProductPage .nome-produto {
     font-size: 3.5vw;
     margin-right: 5vw;
@@ -29,11 +40,13 @@
     letter-spacing: -0.12vw;
 }
 
-.ProductPage .detail-produto {
-    margin-top: 4vw;
+.ProductPage .detail-produto {margin-top: 2vw;}
+
+.ProductPage .detail-produto, .ProductPage .tags-produto, .ProductPage .category-produto {
     font-size: 1.6vw;
     color: #7a7a7a;
     margin-right: 4vw;
+    margin-bottom: -.5vw;
 }
 
 .ProductPage .descricao-produto .text {
@@ -59,7 +72,6 @@
 }
 
 .ProductPage .style-button {
-    margin-top: 1.5vw;
     font-size: 1.7vw;
     background-color: #51b902;
     color: #fff;
@@ -73,9 +85,14 @@
     background-color: #51b902;
 }
 
+.ProductPage .category-produto {
+    margin-bottom: 3vw;
+}
+
 .ProductPage .add-to-cart-button {
     background-color: #585858;
     margin-left: 1vw;
+    padding-left: -1vw;
 }
 
 .ProductPage .add-to-cart-icon {

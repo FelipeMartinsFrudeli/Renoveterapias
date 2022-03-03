@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400&display=swap');
+.container-article {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-article button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.container-article .profile {
+    width: 20%;
+    height: 100vw;
+    padding: 4vw 6% 0 2%;
+}
+
+.container-article .articles {
+    width: 80%;
+    padding: 0 2% 0 5%;
+}
+
+.container-article .articles .default-article {
+    width: 90%;
+    padding: 0 2% 0 5%;
+    margin-bottom: 3vw;
+}
+
+.profile .description-profile {
+    font-size: 1vw;
+    color: #5a5a5a;
+}
+
+.profile .title-profile {
+    font-size: 1.5vw;
+    font-family: 'Roboto Condensed';
+    letter-spacing: -0.01vw;
+    font-weight: 600;
+    color: #161616f8;
+}
+
+.profile .title-profile br{
+    margin: 0;
+    padding: 0;
+}
+
+.profile .div-image-profile img {
+    width: 12vw;
+}
+
+.articles .first-article, .articles .default-article {
+    padding: 0 0vw;
+    padding-left: 8%;
+    display: flex;
+}
+
+.articles .first-article { background-color: #1d997f; }
+
+.articles .title-article, .articles .date-article {
+    text-align: left; 
+    font-size: 1.5vw;
+}
+
+.first-article .title-article, .first-article .date-article {
+    color: #fff;
+}
+
+.articles .first-article .title-article { padding-top: 4vw; }
+.articles .title-article { padding-top: 1vw; }
+
+.articles .date-article { 
+    font-size: 1vw; 
+    padding-bottom: 1vw; 
+    font-weight: 200;
+    padding-top: .5vw;
+}
+
+.articles .first-article .description-article { font-weight: 300; }
+
+.articles .description-article {
+    text-align: left;
+    font-family: 'League Spartan';
+    font-weight: 400;
+    font-size: 1.4vw;
+    padding-top: 1vw;
+    color:#292929;
+}
+
+.text-collumn-article {
+    width:70%;
+    padding-right: 4vw;
+}
+
+.image-collumn-article {
+    background-color: #04ac04f8;
+    width: auto;
+}
+
+.first-article .image-collumn-article .image-article {
+    width: 18vw;
+}
+
+.image-collumn-article .image-article {
+    width: 14vw;
+}
+
+.collum-buttons-article {
+    text-align: left; 
+    display: flex; 
+    height: 4vw;
+    padding-top: 1vw;
+}
+
+.collum-buttons-article button {
+    color: #000;
+    height: 100%;
+    font-weight: 500;
+    font-size: 1.2vw;
+    margin-left: 2%;
+    padding-right: 2%;
+    padding-left: 2%;
+    font-family: 'Roboto Condensed';
+    letter-spacing: 0.02vw;
+}
+
+.first-article .collum-buttons-article button {
+    color: aliceblue;
+}
+
+.collum-buttons-article button:hover {
+    opacity: 60%;
+    transition: all .2s;
+}
+
+.read-more-button {
+    margin-left: auto;
+    width: 10vw;
+}
+
+.read-more-button button {width: 100%; font-weight: 600;}
+
+.articles .title-default-section {
+    text-align: left;
+    margin-top: 4vw;
+    font-size: 1vw;
+    font-family: 'Roboto Condensed';
+    letter-spacing: 0.02vw;
+    font-weight: bold;
+    color: #424242;
+    margin-left: 2vw;
+
+}
+
+.first-article .description-article {
+    color: #fff;
+}
+
+.description-article {
+    color: #000;
+}

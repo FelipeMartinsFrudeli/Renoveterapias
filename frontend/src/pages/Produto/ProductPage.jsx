@@ -11,20 +11,57 @@ export default function ProductPage() {
     const [product, setProduct] = useState([]);
     const [image, setImage] = useState();
 
+
     let { id } = useParams();
 
+    const backend_url = 'http://localhost:5000' //http://localhost:5000  https://app-teste256.herokuapp.com
+    
     const fetchData = async () => {
-        const response = await fetch(`https://app-teste256.herokuapp.com/product/${id}`);
+        const response = await fetch(`${backend_url}/product/${id}`);
         const newData = await response.json();
         setProduct(newData)
-        setLoading(false)
-        //console.log(newData.url_image)
         setImage(newData.url_image)
+        setLoading(false)
     };
+
+    const setParagraph = React.useMemo(() => {
+        if(typeof(product.description) != 'undefined') {
+            product.description.split('<br/>').map((value, index) => {
+                const paragraph = document.createElement('p');
+                const text = document.createTextNode(value);
+                paragraph.appendChild(text);
+                console.log(paragraph)
+                document.getElementById('textDescription').appendChild(paragraph)
+                //return paragraph
+            })
+        }
+    }, [product.description]);
+    
+
+    /* const setDescription = () => {
+        if (!loading) {
+            setParagraph()
+        } else {
+            let index = 0
+            function checkState() {
+                if(loading && index <= 20) {
+                    index++
+                    setTimeout(checkState, 200);
+                } else { setParagraph() }
+            }
+            checkState()
+        }
+    } */
 
     useEffect(() => {
        fetchData();
+       window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     }, [])
+
+    //parse(`${product.description}`)
 
     return (
         <div className='ProductPage'>
@@ -36,21 +73,21 @@ export default function ProductPage() {
                 <div className="collum2">
                     <p className='nome-produto'>{product.name}</p>
                     <p className='preco-produto'>R$ {product.price}</p>
-                    <p className='detail-produto'>R$ {product.details}</p>
-                    <button className="buy-button style-button">Comprar</button>
-                    <button className="add-to-cart-button style-button">
-                        <div>
-                            Adicionar no carrinho
-                            <TiShoppingCart className="add-to-cart-icon" />
-                        </div>
-                    </button>
+                    <p className='detail-produto'>{product.details}</p>
+                    <p className='tags-produto'>Tags: {product.Tags}</p>
+                    <p className='category-produto'>Categorias: {product.category}</p>
+                    <Link className="buy-button style-button" to="/Renoveterapias">Comprar</Link>
+                    <Link to="/Renoveterapias" className="add-to-cart-button style-button">
+                        Adicionar no carrinho
+                        <TiShoppingCart className="add-to-cart-icon" />
+                    </Link>
                 </div>
             </div>
             
             <div className='descricao-produto'>
                 <div className='line'></div>
                 <p className='title'>Descrição</p>
-                <p className='text'>{parse(`${product.description}`)}</p>
+                <p className='text' id="textDescription">{}</p>
             </div>
             
         </div>

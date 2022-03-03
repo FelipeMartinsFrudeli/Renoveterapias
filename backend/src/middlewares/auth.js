@@ -12,20 +12,15 @@ export default async (req, res, next) => {
 
     const [, token] = authHeader.split(' ');
 
-    const authenticated = false;
-
     try {
         const decoded = await promisify(jwt.verify)(token, authConfig.secret);
-        req.userId = decoded.id
-        return next()
+        if (req.query.myId === decoded.id) {
+            return next()
+        } else {
+            return res.status(401).json();
+        }
     } catch (err) {
         console.log(err)
-        return res.status(401).json();
-    }
-
-    if(authenticated) {
-        return next()
-    } else {
         return res.status(401).json();
     }
 }

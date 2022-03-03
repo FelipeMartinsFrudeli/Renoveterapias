@@ -1,21 +1,38 @@
 import React, { useEffect, useState } from 'react'
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import ProductComponent from '../../components/productComponent';
 
 import './HomePage.css'
 
+
 function HomePage() {
     const [loading, setLoading] = useState(true);
     const [product, setProduct] = useState([]);
 
+    const backend_url = 'http://localhost:5000' //http://localhost:5000  https://app-teste256.herokuapp.com
+
     const fetchData = async () => {
-        const response = await fetch(`https://app-teste256.herokuapp.com/products/0/4`);
+        const response = await fetch(`${backend_url}/products/0/20`);
         const newData = await response.json();
         setProduct(newData)
         setLoading(false)
         console.log('1')
     };
 
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 800,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
+        slidesPerRow: 4,
+      };
+      
     useEffect(() => {
        fetchData();
     }, [])
@@ -45,14 +62,18 @@ function HomePage() {
                 </div>
             </div>
             <div className='produtos'>
+            
                 <p className='title'>NOSSOS <a className='greenFont'> PRODUTOS</a></p>
-                <div className='produtos-grid'>
+                <div className='grid-home'>
+                <Slider {...settings} >
                     {/* <ProductComponent name={nameProduct} price={priceProduct} image={imageProduct} /> */}
                     {Object.keys(product).map(function(object, index) {
                         if(loading) {return} else {
-                            return <ProductComponent name={product[object].name} price={product[object].price} image={`${window.location.href.split('/')[0]}//${window.location.href.split('/')[2]}/${window.location.href.split('/')[3]}${product[object].url_image}`} key={index.toString()} id={product[object]._id} />
+                            return <div><ProductComponent name={product[object].name} price={product[object].price} image={`${window.location.href.split('/')[0]}//${window.location.href.split('/')[2]}/${window.location.href.split('/')[3]}${product[object].url_image}`} key={index.toString()} id={product[object]._id} /></div>
+
                         }
                     })}
+                </Slider>
                 </div>
             </div>
             <div className='saiba-mais'>

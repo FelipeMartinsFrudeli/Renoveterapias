@@ -95,6 +95,8 @@
     text-align: left;
 }
 
+.grid-home {margin: 0 0 0 5vw; width: 92%; text-align: left;}
+
 .produto {
     width: 18vw;
     align-self: center;
