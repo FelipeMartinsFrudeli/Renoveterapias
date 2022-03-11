@@ -10,10 +10,6 @@ const repositorySchema = new mongoose.Schema(
             type: String,
             required: true
         },
-        product_id: {
-            type: String,
-            required: true
-        },
         likes: {
             type: String,
             required: false

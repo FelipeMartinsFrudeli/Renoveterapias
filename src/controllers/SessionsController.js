@@ -4,12 +4,15 @@ import User from "../models/User"
 import { checkPassword } from "../services/auth";
 
 import authConfig from "../config/auth";
+import Admin from "../models/Admin";
 
 class SessionController {
     async create(req, res) {
         const { email, password } = req.body;
 
-        const user = await User.findOne({ email });
+        let user = await User.findOne({ email });
+
+        if (!user) {user = await Admin.findOne({ email });}
 
         console.log(password)
         if(!user || !checkPassword(user, password)) {

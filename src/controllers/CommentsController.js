@@ -35,13 +35,13 @@ class ItemsController {
         try {
 
             const { id } = req.params;
-            const product = await Products.findById(id);
+            const comments = await Comments.findById(id);
             
-            if(!product) {
+            if(!comments) {
                 return res.status(404).json({message:"Comentário não encontrado!"})
             }
 
-            return res.json(product)
+            return res.json(comments)
 
         } catch (err) {
             console.error(err)
@@ -54,7 +54,7 @@ class ItemsController {
             
             const { content, user_id, product_id, likes, dislikes } = req.body;
             
-            const newComment = await Products.create({ 
+            const newComment = await Comments.create({ 
                 content, user_id, product_id, likes, dislikes
             })
 
@@ -72,15 +72,9 @@ class ItemsController {
             const { content, user_id, product_id, likes, dislikes } = req.body;
 
             const { id } = req.params;
-            const product = await Products.findOne({ id });
-
-            if (product) {
-                return res
-                    .status(422)
-                    .json({ message: `O produto com o nome: ${name} já existe!` })
-            }
+            const comments = await Comments.findOne({ id });
             
-            const newProduct = await Products.updateOne({ content, likes, dislikes })
+            await comments.updateOne({ content, likes, dislikes })
 
             return res.status(200).json({message:"Alterado com sucesso!"});
 
@@ -94,13 +88,13 @@ class ItemsController {
         try {
             
             const { id } = req.params;
-            const product = await Products.findById(id)
+            const comments = await Comments.findById(id)
 
-            if(!product) {
+            if(!comments) {
                 return res.status(404).json({message:"Produto não encontrado!"})
             }
 
-            await product.deleteOne();
+            await comments.deleteOne();
 
             return res.status(200).json({message:"Excluído com sucesso!"});
 
