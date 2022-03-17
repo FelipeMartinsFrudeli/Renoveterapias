@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Renoveterapias/static/css/main.af3bf37c.css",
-    "main.js": "/Renoveterapias/static/js/main.7f8e4b6a.js",
+    "main.js": "/Renoveterapias/static/js/main.abb7c22e.js",
     "static/media/saiba-mais-banner.png": "/Renoveterapias/static/media/saiba-mais-banner.4760d414a9380b7c0fc9.png",
     "static/media/tropical-beach.png": "/Renoveterapias/static/media/tropical-beach.d1d0fd32d054d38353a8.png",
     "static/media/slick.svg": "/Renoveterapias/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -13,10 +13,10 @@
     "static/media/Email_icon.svg": "/Renoveterapias/static/media/Email_icon.50d3f4385a4eff04544b.svg",
     "index.html": "/Renoveterapias/index.html",
     "main.af3bf37c.css.map": "/Renoveterapias/static/css/main.af3bf37c.css.map",
-    "main.7f8e4b6a.js.map": "/Renoveterapias/static/js/main.7f8e4b6a.js.map"
+    "main.abb7c22e.js.map": "/Renoveterapias/static/js/main.abb7c22e.js.map"
   },
   "entrypoints": [
     "static/css/main.af3bf37c.css",
-    "static/js/main.7f8e4b6a.js"
+    "static/js/main.abb7c22e.js"
   ]
 }
